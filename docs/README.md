@@ -1,7 +1,7 @@
 ---
 layout: home
 title:  Introduction to the Yens Course -- Fall 2024
-nav_exclude: true
+nav_exclude: false 
 permalink: /:path/
 seo:
   type: Course
