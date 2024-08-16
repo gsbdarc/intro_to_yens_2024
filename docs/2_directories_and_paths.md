@@ -2,8 +2,7 @@
 title: 2. Directories and File System Paths
 layout: page
 nav_order: 2
-parent: Day 1
-updateDate: 2024-07-10
+updateDate: 2024-08-16
 ---
 
 # {{ page.title }}

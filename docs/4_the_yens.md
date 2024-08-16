@@ -2,8 +2,7 @@
 title: 4. The Yen Servers
 layout: page
 nav_order: 4
-parent: Day 1
-updateDate: 2024-07-10
+updateDate: 2024-08-16
 ---
 
 # {{ page.title }}

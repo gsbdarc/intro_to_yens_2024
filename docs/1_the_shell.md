@@ -2,8 +2,7 @@
 title: 1. The Shell 
 layout: page
 nav_order: 1
-parent: Day 1
-updateDate: 2024-07-10
+updateDate: 2024-08-16
 ---
 
 # {{ page.title }}
