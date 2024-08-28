@@ -374,7 +374,7 @@ See code [here](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples
 ### Running Serial R Script on the Command Line
 If you want to simply run the script, you can do so from the command line.
 
-{% include important.html "Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens."%}
+{% include important.html content="Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens." %}
 
 
 We never use `detectCores()` function on the shared systems, so instead, we will hard code the number of cores for
