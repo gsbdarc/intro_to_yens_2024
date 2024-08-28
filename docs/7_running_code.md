@@ -6,7 +6,18 @@ updateDate: 2024-08-28
 ---
 
 # {{ page.title }}
----
+
+## Clone a remote Git repository
+Often, you'll want to download an existing Git repository to a machine you have access to so you can run and/or modify the code in it yourself; doing so is quite common when collaborating with others or working with open-source software. The Git vocabulary term for doing so is **cloning** a repository.
+
+Today, we'll be working with examples we uploaded to a remote Git repository hosted by GitHub that also contains the source code for this website. To clone the repository to your ZFS home directory on the Yens, run the following command:
+```bash
+SUNetID@yenX:~$ git clone https://github.com/gsbdarc/intro_to_yens_2024.git
+```
+
+Once you've run that command, change your working directory to the `~/intro_to_yens_2024/examples/` folder.
+
+## Yen Software (Modules)
 There's a number of software packages available for use on the Yen servers.  Here is the current list:
 
 * AMPL 

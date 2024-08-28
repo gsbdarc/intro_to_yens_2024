@@ -5,6 +5,8 @@ nav_order: 6
 updateDate: 2024-08-28
 ---
 
+# {{ page.title }}
+
 ## Web-based Computing
 Web-based computing is available on the interactive Yen servers with <a href="https://jupyterhub.readthedocs.io/en/stable/" target="_blank">JupyterHub</a> without the need to `ssh` from the terminal.  JupyterHub is a platform designed to allow multiple users to launch their own JupyterLab instances on a shared system with minimal user effort. 
 It also gives you a terminal, file browser and a way to run Jupyter notebooks with several language kernels including Python 3, R, Julia, MATLAB, SAS, and Stata. 

@@ -3,10 +3,8 @@ title: 10. Transferring Files to and from Yen Servers
 layout: page
 nav_order: 10 
 updateDate: 2024-08-16
----
 
 # {{ page.title }}
----
 In the course of your data processing pipeline, you will often need to transfer data to Yen servers for analysis and subsequently move the resulting files back to your local machine.
 
 ## Using `scp` for File Transfers
@@ -34,24 +32,15 @@ If you want to transfer all CSV files from a particular directory, use the follo
 $ scp *.csv <SUNetID>@yen.stanford.edu:/zfs/projects/students/<my_project_dir>
 ```
 
-{% include tip.html content="`scp` command above uses `yen.stanford.edu` which means the transfer will go through the interactive yens. For faster transfers, we can use `yen-transfer` node." %}
+{: .note}
+`scp` command above uses `yen.stanford.edu` which means the transfer will go through the interactive yens. For faster transfers, we can use `yen-transfer` node.
 
-To use the Yen Data Transfer Node, we can modify the `scp` command as follows:
+To use the Yen Data Transfer Node, called `yen-transfer`, we can modify the `scp` command as follows:
 
 
 ```bash
 $ scp *.csv <SUNetID>@yen-transfer.stanford.edu:/zfs/projects/students/<my_project_dir>
 ```
-
-#### Example
-Let's transfer an <a href="/gettingStarted/2_local_example.html" target="_blank">R script</a> from your local machine to the Yen servers.
-On your local machine, in a terminal, run:
-
-```bash
-$ cd ~/Desktop/intro-to-yens
-$ scp investment-npv-parallel.R <SUNetID>@yen.stanford.edu:~
-```
-where `~` is your Yen home directory shortcut. Enter your SUNet ID password and Duo authenticate for the file transfer to complete.
 
 ### Transferring Folders to Yen Servers
 On your local machine, open a new terminal and navigate to the parent directory of the folder that
@@ -66,6 +55,8 @@ The `-r` flag is used to copy folders (**r**ecursively copy files). Replace `<SU
 
 Let's illustrate this with an example. We'll create an empty folder called `test_from_local` and transfer it to the home directory on Yen servers:
 
+Run from a local terminal (not connected to the Yens):
+
 ```bash
 $ mkdir test_from_local
 $ scp -r test_from_local/ <SUNetID>@yen.stanford.edu:~
@@ -77,11 +68,11 @@ When transferring data from the Yens to your local machine, the `<source_path>` 
 To copy files from Yen servers to your local machine, open a new terminal without connecting to the Yens. Use the `cd` command to navigate to the local directory where you want to copy the files to. Then run:
 
 ```bash
-$ cd my_local_folder
+$ cd <my_local_folder>
 $ scp -r <SUNetID>@yen.stanford.edu:/zfs/projects/students/<my_project_dir>/results .
 ```
 
 In this example, we're copying the `results` folder from the Yen's ZFS file system to your local directory (`.` signifies the current directory). If you're copying files (not directories), omit the `-r` flag. To transfer multiple files, use the wildcard `*` to match several files.
 
 ### Using Other Transfer Tools
-See <a href="/faqs/rclone.html" target="_blank">rclone</a> and <a href="/faqs/rclone.html" target="_blank">rsync</a> pages to learn two additional transfer tools.
+See <a href="https://rcpedia.stanford.edu/faqs/rclone.html" target="_blank">rclone</a> and <a href="https://rcpedia.stanford.edu/faqs/rsync.html" target="_blank">rsync</a> pages to learn two additional transfer tools.

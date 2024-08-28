@@ -2,7 +2,7 @@
 title: 9. How Do I Run a Job that Continues after I Log Out?
 layout: page
 nav_order: 9
-updateDate: 2024-08-16
+updateDate: 2024-08-28
 ---
 
 # {{ page.title }}
@@ -30,7 +30,8 @@ $ screen -S npv
 This will take you to a new terminal with a blank view and a command prompt at the top of the page. 
 Here, you can start issuing commands as usual and in particular, you can start a script that you expect to run for a long time.
 
-{% include note.html content="Screens are not tied to your user, but rather to the specific Yen that you started the screen in. So do not expect your screen session on `yen1` to appear in `yen2`." %}
+{: .note }
+Screens are not tied to your user, but rather to the specific Yen that you started the screen in. So do not expect your screen session on `yen1` to appear in `yen2`.
 
 Let's run our serial R script again. This time, we will let it run in a screen (if you had modules loaded, 
 starting a screen preserves these in the new terminal started by `screen`). So, we can start our R process:
@@ -99,4 +100,5 @@ $ screen -ls
 No Sockets found in /run/screen/S-nrapstin.
 ```
 
-{% include important.html content="screen sessions should only be started from a regular terminal, not JupyterHub terminal. Screens will not persist in Jupyter." %}
+{: .important }
+Screen sessions should only be started from a regular terminal, not JupyterHub terminal. Screens will not persist in Jupyter.
