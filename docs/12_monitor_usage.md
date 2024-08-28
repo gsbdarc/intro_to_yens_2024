@@ -80,7 +80,7 @@ $ userload
 ```
 
 {: .note }
-You can refresh a particular command with `watch`. So, you can run `watch userload` and the output will refresh every 2 second (by default). 
+You can refresh a particular command with `watch`. So, you can run `watch userload` and the output will refresh every 2 seconds (by default). 
 
 Run `htop -u $USER` in the third window, where `$USER` is your SUNet ID:
 
