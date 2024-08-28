@@ -134,7 +134,7 @@ You should see the list of all avaible R versions that are already installed on 
 If you do not see the software or a particular software version that you need for your research, please email us with the addition request at [gsb_darcresearch@stanford.edu](mailto:gsb_darcresearch@stanford.edu).
 
 
-If there are multiple versions of the same sofware, the default version is indicated by a `(D)` next to the module name.
+If there are multiple versions of the same software, the default version is indicated by a `(D)` next to the module name.
 For example, the default R version is currently `R/4.3.0`. If you are happy with the default version, you can simple type:
 
 ```bash
