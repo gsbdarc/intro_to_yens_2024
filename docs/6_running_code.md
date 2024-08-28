@@ -164,10 +164,9 @@ You should see:
 
 ```bash
 Currently Loaded Modules:
-  1) rstudio/2022.07.2+576   2) R/4.1.3
+  1) R/4.1.3
 ```
 
-We see that together with R software, the RStudio module is also loaded automatically.
 
 If you want to switch R versions, you can use:
 
@@ -184,18 +183,21 @@ You should see:
 
 ```bash
 Currently Loaded Modules:
-  1) rstudio/2022.07.2+576   2) R/4.2.1
+  1) R/4.2.1
 ```
 
 You can unload an individual module with:
 
 ```bash
-$ module unload rstudio
+$ module unload R 
 ```
 
 Or with a shorthand:
 ```bash
-$ ml -rstudio
+$ ml R
+$ ml
+$ ml -R
+$ ml
 ```
 Or you can unload all modules that you have currently loaded with:
 
@@ -213,29 +215,6 @@ You will see:
 
 ```bash
 No modules loaded
-```
-
-Sometimes you want to know the path where software binary is installed. For example, you might use this information
-to install some R packages from source. To get details about a currently loaded package, use:
-
-```bash
-$ ml R/4.3.0
-$ ml show R
-```
-
-This will print the following information that might be useful:
-
-```bash
----------------------------------------------------------------------------------------------------
-   /software/modules/Core/R/4.3.0.lua:
----------------------------------------------------------------------------------------------------
-whatis("Name: R")
-whatis("Version: 4.3.0")
-whatis("Category: tools")
-whatis("URL: http://cran.cnr.berkeley.edu/")
-whatis("Description: R")
-family("R")
-prepend_path("PATH","/software/free/R/R-4.3.0/bin")
 ```
 
 Linux modules only modify your current working environment which means that if you lose connection to the Yens or close your terminal window, you will need to reload the modules. But all of the libraries or packages that you have installed as a user will persist and only need to be installed once.
@@ -368,19 +347,6 @@ Then install `doParallel` package:
 The downloaded source packages are in
         ‘/tmp/Rtmpwy8WeV/downloaded_packages’
 ```
--------------------------
-### Running R Script Interactively
-
-Now that we have loaded R module and installed R packages that we are going to use, we are ready to run our code.
-You can run R code line by line interactively by copying-and-pasting into the R console.
-For example,
-[1] "Hello!"
-```
-
-The advantage of interactive console is that the results are printed to the screen immediately and if you are developing code
-So, use this method for when you need interactive development / debugging environment. Another disadvantage is that if you
-did not login with the graphical interface (X forwarding) you will not be able to plot anything in the interactive console.
-So, if you need plots and graphs, either use `-Y` flag when connecting to the Yens or use RStudio on JupyterHub.
 
 We can then quit out of R without saving workspace image:
 
@@ -405,11 +371,10 @@ Our Monte Carlo NPV simulation involves the following steps:
 
 See code [here](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples/investment-npv-serial.R).
 
-#### Running Serial R Script on the Command Line
+### Running Serial R Script on the Command Line
 If you want to simply run the script, you can do so from the command line.
 
-!!! warning
-    Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens.
+{% include important.html "Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens."%}
 
 
 We never use `detectCores()` function on the shared systems, so instead, we will hard code the number of cores for
