@@ -2,19 +2,19 @@
 title: 7. Understanding Cluster Components 
 layout: page
 nav_order: 7
-updateDate: 2024-08-16
+updateDate: 2024-08-28
 ---
 
 # {{ page.title }}
 ---
 
 ## Data Movement from NFS to CPU
-Imagine you write a Python program that loads and filters a CSV file. When working on a research computing cluster (the Yens), it's essential to understand how data moves from ZFS to the processing unit (CPU) on a particular Yen computer (also called node) that will load and process the CSV files (the data).
+Imagine you write a R or Python program that loads and filters a CSV file. When working on a research computing cluster (the Yens), it's essential to understand how data moves from ZFS to the processing unit (CPU) on a particular Yen computer (also called node or server) that will load and process the CSV file (the data).
 
 ### Key Components
 
 1. **CPU (Central Processing Unit)**: The primary component that processes instructions and data. 
-2. **RAM (Random Access Memory)**: Temporary storage that provides fast access to data for the CPU. There is a memory hierarchy with fastest but smallest registers that are closes to the CPU but hold the least amount of data for processing to the largest main memory (RAM) that is further from the CPU.
+2. **RAM (Random Access Memory)**: Temporary storage that provides fast access to data for the CPU. There is a memory hierarchy with fastest but smallest registers that are closest to the CPU but hold the least amount of data for processing to the largest main memory (RAM) that is further from the CPU.
 3. **Storage**: On the Yens, storage is a Network File System (NFS), called ZFS. Storage, also called disk(s) or hard drive(s), allows multiple computers (Yen nodes) to access files (i.e., CSV file) over a network as if they were on the local hard drive. 
 Storage medium can be:
 	- Hard disk drives, HDDs ("spinning disks"), which are slower to access but cheaper because they have moving parts 
