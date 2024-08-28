@@ -130,7 +130,7 @@ You should see the list of all avaible R versions that are already installed on 
 
 ```
 
-{: .tip }
+{: .note}
 If you do not see the software or a particular software version that you need for your research, please email us with the addition request at [gsb_darcresearch@stanford.edu](mailto:gsb_darcresearch@stanford.edu).
 
 
