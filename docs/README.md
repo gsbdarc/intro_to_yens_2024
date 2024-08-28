@@ -19,6 +19,7 @@ updateDate: 2024-08-16
 
 
 We’re assuming you’ve done some programming, but talk to us if you haven’t!
+
 These sessions should be helpful to *you*, so let us know if they aren’t!
 
 ## Who are we?

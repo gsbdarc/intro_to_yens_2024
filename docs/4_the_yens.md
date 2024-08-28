@@ -44,7 +44,6 @@ In this session, we are using only the interactive Yens. Stay tuned for schedule
 - Typically, they interact with a remote server by accessing *the shell on the server* via a remote connection initiated by a shell command on their computer
 
 - The DARC team at the GSB runs several servers dedicated to GSB research projects named **Yens** that have many more computational resources (e.g. storage, processing speed) than your computer
-    - You'll get much more info from Natalya and Jeff later this week
 
 ## Accessing the Yens
 
@@ -55,7 +54,7 @@ machine_name:~$ ssh SUNetID@yen.stanford.edu
 ```
 
 - The single argument to the `ssh` command above has two components:
-    1. The username on the remote machine, in this case `SUNetID`, which you sould replace with your actual SUNet ID
+    1. The username on the remote machine, in this case `SUNetID`, which you should replace with your actual SUNet ID
     2. The server's internet address, in this case `yen.stanford.edu`
 
 - In response, the Yen server will prompt you to type in your SUNet password in the command line; note that on the shell, passwords don't appear at all when you type (not even dots, which give away the password length)
@@ -90,23 +89,23 @@ SUNetID@yen4:~$
     2. The part after the `@` indicates which of the physical Yen servers you're logged in to;
         - There are 5 physical Yen servers you can log into
         - `ssh`’ing into the address `yen.stanford.edu` automatically picks a server for you
-        - To log specifically into Yen 4, use `yen4.stanford.edu` as the server address in your `ssh` command
+        - To log specifically into Yen4, use `yen4.stanford.edu` as the server address in your `ssh` command
 
 ## The Yens' file system: ZFS
 
 - Although you are logged in to a particular Yen server, the **file system** called **ZFS** is *shared across all of them*
     - The file system is the part of the operating system responsible for managing files and directories
 
-### The Yens home directory
+### Home directory
 
-- When you log in to any Yen server, your working directory is set to your home directory on the Yens' sahred file system aliased by `~`
+- When you log in to any Yen server, your working directory is set to your home directory on the Yens' shared file system aliased by `~`
     - if you run `pwd`, you can see that `~` is an alias for the absolute path `/home/users/<SUNetID>`, as illustrated in the following file system diagram:
 
 ![](../assets/images/home-dir.png)
 
 - Your home directory is a good place to store small files like scripts and text files.
-- It is *not* for storing large files or outputting large files to while working on a project, since its capacity is capped at 50GB
-- To see how much of your 50GB quota you've used, run the `gsbquota` command:
+- It is *not* for storing large files or outputting large files to while working on a project, since its capacity is capped at 50 G.
+- To see how much of your 50 G quota you've used, run the `gsbquota` command:
 
 ```bash
 SUNetID@yen4:~$ gsbquota
@@ -117,9 +116,9 @@ SUNetID@yen4:~$ gsbquota
 
 ### Yens project directories
 
-- ZFS also has ~1PB of high-performance storage that the DARC team can allocate in large quantities for all faculty and student projects
+- ZFS also has ~1 PB of high-performance storage that the DARC team can allocate in large quantities for all faculty and student projects
 
-- In particular, faculty and students can request the creation of a **project directory** of a some size, which is also backed up, can store large files, and can be shared for collaborative work
+- In particular, faculty and students can request the creation of a **project directory** of some size, which is also backed up, can store large files, and can be shared for collaborative work
     - Faculty project directories are located at `/zfs/projects/faculty/<Faculty-SUNetID>-<Project-Name>`
     - Student project directories are located at `/zfs/projects/students/<Student-SUNetID>-<Project-Name>`
     - The following file system diagram illustrates where these directories are housed on ZFS:
@@ -134,10 +133,10 @@ SUNetID@yen4:~$ gsbquota /zfs/projects/faculty/<Faculty-SUNetID>-<Project-Name>
 
 ### Scratch spaces
 
-- Yens have a shared temporary storage on ZFS at `/scratch`
-- `/scratch` is ~100TB and is a good place to store temporary files if you need to access them later or from any Yen
+- Yens have a shared temporary storage on ZFS at `/scratch/shared`
+- `/scratch/shared` is ~100 TB and is a good place to store temporary files if you need to access them later or from any Yen
 - Every Yen also has a local temp directory at `/tmp` accessible by all users but only from each yen (i.e. `/tmp` on yen1 is not accessible from yen2)
     - `/tmp` is a flash based local disk with much faster reading/writing than ZFS.
-    - `/tmp` is ~ 2TB and is a good place to store temporary objects as the program runs that do not need to persist after the run finishes.
+    - `/tmp` is ~ 2 TB and is a good place to store temporary objects as the program runs that do not need to persist after the run finishes.
     - Use `/tmp` if your program needs a lot of reading/writing (e.g. constantly reading and writing temporary files).
 

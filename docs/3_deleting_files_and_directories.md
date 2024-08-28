@@ -10,13 +10,13 @@ updateDate: 2024-08-16
 
 ## Deleting files
 
-- When passed paths to non-existent files in an existing directory as arguments, the command `touch` creates a empty files w/ those names there; try it:
+- We can pass the paths to non-existent files in an existing directory as arguments to create empty files with the command `touch`, which will make two empty files in the current directory:
 
 ```bash
 machine_name:~/test_dir/test2$ touch a b
 ```
 
-- file, pass a path to that file to the program `rm` as an argument; try deleting the file `a` you just created from outside the directory it’s in like so:
+- To remove a file, pass a path to that file to the program `rm` as an argument; try deleting the file `a` you just created from outside the directory it’s in like so:
 
 ```bash
 machine_name:~/test_dir/test2$ cd ..
