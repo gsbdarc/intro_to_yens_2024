@@ -1,5 +1,6 @@
 # Output files from jobs
 *.out 
+*.pdf
 
 # Jupyter Notebook
 .ipynb_checkpoints
