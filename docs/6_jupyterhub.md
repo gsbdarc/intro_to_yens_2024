@@ -1,8 +1,8 @@
 ---
-title: 10. JupyterHub on the Yens 
+title: 6. JupyterHub on the Yens 
 layout: page
-nav_order: 10
-updateDate: 2024-08-16
+nav_order: 6
+updateDate: 2024-08-28
 ---
 
 ## Web-based Computing

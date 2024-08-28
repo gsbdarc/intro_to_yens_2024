@@ -1,7 +1,7 @@
 ---
-title: 8. How Do I Run a Job that Continues after I Log Out?
+title: 9. How Do I Run a Job that Continues after I Log Out?
 layout: page
-nav_order: 8
+nav_order: 9
 updateDate: 2024-08-16
 ---
 
@@ -59,7 +59,7 @@ There is a screen on:
 1 Socket in /run/screen/S-nrapstin.
 ```
 
-If you exit out of the server here, you can be assured that the scripts in your screen sessions will continue to run, granted they are accessing ZFS space.
+If you exit out of the server here, you can be assured that the scripts in your screen sessions will continue to run.
 
 To return to any existing screen session, you simply need to type:
 ```bash
@@ -74,7 +74,7 @@ $ screen -r npv
 
 If you are actively printing to the console in your script, you may notice that you cannot scroll up through the log of print statements when you are in a screen. 
 In order to activate the "scroll mode", you can use the keyboard shortcut `ctrl + a` and then hit `esc`. 
-In this mode, you can peruse through your print statements with the up and down arrow keys. Once you are finished scrolling, you can exit out of the mode by hitting the `q` or `esc` keys.
+In this mode, you can scroll using the up and down arrow keys. Once you are finished scrolling, you can exit out of the mode by hitting the `q` or `esc` keys.
 
 You may run into a situation where you are disconnected or timed out from the Yens while you are attached to a screen session. 
 When you log back onto the Yens and try to reconnect to that session again, you may find that you cannot re-attach to the screen, since it's already "attached".
@@ -98,3 +98,5 @@ $ screen -ls
 ```bash
 No Sockets found in /run/screen/S-nrapstin.
 ```
+
+{% include important.html content="screen sessions should only be started from a regular terminal, not JupyterHub terminal. Screens will not persist in Jupyter." %}

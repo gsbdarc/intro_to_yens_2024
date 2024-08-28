@@ -1,7 +1,7 @@
 ---
-title: 6. Running Code on the Yens
+title: 7. Running Code on the Yens
 layout: page
-nav_order: 6
+nav_order: 7
 updateDate: 2024-08-28
 ---
 
@@ -192,7 +192,7 @@ You can unload an individual module with:
 $ module unload R 
 ```
 
-Or with a shorthand:
+Or with a shorthand `-`:
 ```bash
 $ ml R
 $ ml
