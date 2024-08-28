@@ -130,8 +130,9 @@ You should see the list of all avaible R versions that are already installed on 
 
 ```
 
+{: .tip }
+If you do not see the software or a particular software version that you need for your research, please email us with the addition request at [gsb_darcresearch@stanford.edu](mailto:gsb_darcresearch@stanford.edu).
 
-{% include tip.html content="If you do not see the software or a particular software version that you need for your research, please email us with the addition request at [gsb_darcresearch@stanford.edu](mailto:gsb_darcresearch@stanford.edu)." %}
 
 If there are multiple versions of the same sofware, the default version is indicated by a `(D)` next to the module name.
 For example, the default R version is currently `R/4.3.0`. If you are happy with the default version, you can simple type:
@@ -374,7 +375,8 @@ See code [here](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples
 ### Running Serial R Script on the Command Line
 If you want to simply run the script, you can do so from the command line.
 
-{% include important.html content="Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens." %}
+{: .important }
+Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens.
 
 
 We never use `detectCores()` function on the shared systems, so instead, we will hard code the number of cores for
