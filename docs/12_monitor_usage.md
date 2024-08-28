@@ -15,7 +15,8 @@ environments that are managed by a scheduler (like Yen-Slurm or Sherlock). In th
 However, when working on systems like the interactive yens where resources like **CPU**, **RAM**, and **disk space** are shared among many researchers,
  it is important that all users be mindful of how their work impacts the larger community. 
 
-{% include tip.html content="When using interactive yens, use the ```htop``` and ```userload``` commands to monitor CPU and RAM usage. Use the ```gsbquota``` command to monitor disk quota." %}
+{: .important }
+When using interactive yens, use the ```htop``` and ```userload``` commands to monitor CPU and RAM usage. Use the ```gsbquota``` command to monitor disk quota.
 
 ### CPU & RAM
 
@@ -30,34 +31,20 @@ The ```htop``` console looks like this:
 
 ![htop output for well-behaved code](../assets/images/proc_monitoring.png)
 
-
-{% include warning.html content="Note that in certain cases greedy jobs may be terminated automatically to preserve the integrity of the system." %}
+{: .warning }
+Note that in certain cases greedy jobs may be terminated automatically to preserve the integrity of the system.
 
 The `userload` command will list the total amount of resources (CPU & RAM) all your tasks are consuming on that particular Yen node.
 
 ```bash
 $ userload
 ```
+If the output is empty, you are not utilizing any CPU or RAM on this Yen node.
 
 ### Disk
 
 Unlike personal home directories which have a 50 GB quota, faculty project directories on yens/ZFS are much bigger (1 T default). 
 Disk storage is a finite resource, however, so to allow us to continue to provide large project spaces please always be aware of your disk footprint. This includes compressing files when you are able, and removing intermediate and/or temp files whenever possible. 
-
-Disk quotas on all yen servers can be reviewed by using the ```gsbquota``` command. It produces output like this:
-
-```bash
-nrapstin@yen1:~$ gsbquota
-/home/users/nrapstin: currently using 39% (20G) of 50G available
-```
-
-You can also check the size of your project space by passing in a full path to your project space to `gsbquota` command:
-
-```bash
-nrapstin@yen1:~$ gsbquota /zfs/projects/students/<my-project-dir>/
-/zfs/projects/students/<my-project-dir>/: currently using 39% (78G) of 200G available
-```
-
 
 ## Example
 We are going to continue using the same R example and experiment running it on multiple cores and monitoring our resource consumption.
@@ -75,7 +62,7 @@ the `yen3` in both so I can monitor my resources when I start running the R prog
 
 ```bash
 $ ssh yen3.stanford.edu
-$ cd rf_bootcamp_2024/examples/r_examples
+$ cd intro_to_yens_2024/examples
 ```
 
 Once you have three terminal windows connected to the same yen, run the `investment-npv-serial.R` program after loading the R module
@@ -91,7 +78,11 @@ Once the program is running, monitor your usage with `userload` command in the s
 ```bash
 $ userload
 ```
-Run `htop -u $USER` in the third window, where `$USER` is your SUNet:
+
+{: .note }
+You can refresh a particular command with `watch`. So, you can run `watch userload` and the output will refresh every 2 second (by default). 
+
+Run `htop -u $USER` in the third window, where `$USER` is your SUNet ID:
 
 ```
 $ htop -u $USER
@@ -105,7 +96,7 @@ $ userload
 nrapstin         | 0.99 Cores | 0.00% Mem on yen3.stanford.edu
 ```
 
-Let's run the same program with more cores. See code [here](https://github.com/gsbdarc/rf_bootcamp_2024/blob/main/examples/r_examples/investment-npv-parallel.R).
+Let's run the same program with more cores. See code [here](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples/investment-npv-parallel.R).
  
 Then rerun:
 
@@ -135,7 +126,7 @@ specified 8 cores in our R program and about 8 CPU cores being utilized in `user
 ![](../assets/images/monitor-2.png)
 
 Last modification we are going to make is to pass the number of cores as a command line argument to our R script.
-See the modified [script](https://github.com/gsbdarc/rf_bootcamp_2024/blob/main/examples/r_examples/investment-npv-parallel-args.R) called `investment-npv-parallel-args.R`. 
+See the modified [script](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples/investment-npv-parallel-args.R) called `investment-npv-parallel-args.R`. 
 
 ```bash
 $ Rscript investment-npv-parallel-args.R 8

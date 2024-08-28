@@ -10,7 +10,7 @@ updateDate: 2024-08-16
 
 - Sometimes, you'll need to edit files directly in the shell; a popular program to do so is called **Vim**
 
-- Vim (and other shell-based text editors) are powerful, but take getting used to; don’t worry, we’ll show you how to edit files w/ graphical editors on Wednesday
+- Vim (and other shell-based text editors) are powerful, but take time getting used to; don’t worry, you can always use Jupyter Editor. 
     - It's good to use Vim for now to keep getting used to the shell
 
 - To create a new file and open it with Vim, use the command `vim` with a path to a file that doesn't yet exist passed as an argument:
@@ -19,10 +19,10 @@ updateDate: 2024-08-16
 SUNetID@yen4:~$ vim input.txt
 ```
 
-- *Note:* you can open an existing file by using `vim` with a path to a file that already exists passed as an argument
+- You can open an existing file by using `vim` with a path to a file that already exists passed as an argument
 
 - Because the shell is text-based, Vim is controlled completely via the keyboard
-    - For some, not moving between the mouse and keyboard makes editing a lot faster (not me)
+    - With practice, not moving between the mouse and keyboard makes editing a lot faster 
 
 - Vim is a *modal editor*, meaning it has different modes for different ways of manipulating file contents; today, we’ll focus just on two modes:
     - **Command mode** is the default mode; it is for moving around a file and making edits (e.g. deleting words/lines); you can always press `<ESC>` (the escape key) to go to Command mode
@@ -39,5 +39,5 @@ SUNetID@yen4:~$ vim input.txt
 
 - Then type `w` to write your current edits to the file and/or `q` to close the file and quit Vim; press `<ENTER>` (the enter key) to execute; in summary:
     - `:w<ENTER>` writes your current edits to the file but keeps Vim open
-    - `:q<ENTER>` closes the file and quits Vim without saving your current edits
+    - `:q<ENTER>` closes the file and quits Vim without saving your current edits. Vim will complain. Can overwrite with `:q!`
     - `:wq<ENTER>` writes your current edits to the file, closes it, and then quits Vim
