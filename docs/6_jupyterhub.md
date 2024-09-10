@@ -138,9 +138,9 @@ This should show all the different examples available in the `intro_to_yens_2024
 
 ![](../assets/images/jupyter_notebook.png)
 
-In the top right corner of the notebook, you can see the current **kernel** being used.(Python 3 (ipykernel) above) A kernel is the computational engine that runs your code, and each notebook is linked to a **language-specific kernel** (e.g., Python, R, Julia).
+In the top right corner of the notebook, you can see the current **kernel** being used.(Python 3 (ipykernel)) A kernel is the computational engine that runs your code, and each notebook is linked to a **language-specific kernel** (e.g., Python, R, Julia).
 
-The notebook is composed of **cells**, which can be executed individually or all at once. You can run individual cells using the **Run** button (single arrow) or by pressing `Shift + Enter`. To run all cells in sequence, you can use the **Run All** button (double arrow). This flexibility allows you to interact with the kernel in a modular and dynamic way, making it easy to run, test, and modify code in parts or as a whole.
+The notebook is composed of **cells**, which can be executed individually or all at once. You can run individual cells using the **Run** button (single arrow) or by pressing `Shift + Enter`. To run all cells in sequence, you can use the **Run All** button (double arrow). This flexibility allows you to interact with the kernel in a modular and dynamic way, making it easy to run, test, and modify code in parts or as a whole. Clicking on the cycle icon will restart the kernel.
 
 There are two main types of cells:
 
@@ -174,7 +174,7 @@ In the file browser of the above image, you can see a Python file. Once you have
 
 
 If you opened up a notebook and want to get back to the Launcher interface to launch other software as well, click the "+" button in the upper left corner 
-![](../assets/images/launcher.png)
+![](../assets/images/jupyterhub_launcher.png)
 
 ## RStudio
 -----------
