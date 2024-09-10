@@ -123,7 +123,7 @@ This is not the correct place to load/download massive dataset or files. For the
 You can launch a terminal from JupyterHub. This provides access to commands you would normally run on the command line on the Yens, 
 but through the web browser. However, we have seen issues with JupyterHub terminal (as well as VSCode) that modifies or overwrites python paths and environment variables so for package installations, we recommend using a terminal outside of JupyterHub.
 
-Let's open up a Terminal and navigate to the `rf_bootcamp_2024`
+Let's open up a Terminal and navigate to the `intro_to_yens_2024`
 
 
 ```bash
@@ -223,7 +223,7 @@ If your processes require more than these limits, reach out to the <a href="http
 Finally, you can also edit text files like R scripts directly on JupyterHub. Clicking on Text File icon will open a new file that you can edit. Similarly, clicking on Python File will create an empty `.py` file and clicking on R File will create an empty `.r` file.
 You can also navigate to a directory that has the scripts you want to edit and double click on the script name to open it up in the Text Editor.
 
-For example, navigate to `intro_to_yens/examples/` folder in file brower first then double click on `investment-npv-parallel.R` file to open it in the text editor:
+For example, navigate to `intro_to_yens_2024/examples/` folder in file brower first then double click on `investment-npv-parallel.R` file to open it in the text editor:
 ![](../assets/images/edit-r-script.png)
 
 ---
