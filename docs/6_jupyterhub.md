@@ -173,7 +173,7 @@ In the file browser of the above image, you can see a Python file. Once you have
 - **Shortcuts**: Use `Shift + Enter` to quickly run cells. When the margin of the cells is selected `D+D` will delete a cell, `A` will insert a cell above, and `B` will insert a cell below.
 
 
-If you opened up a notebook and want to get back to the Launcher interface to launch other software as well, click the "+" button in the upper left corner 
+If you opened up a notebook and want to get back to the Launcher interface to launch other software, click the "+" button in the upper left corner 
 ![](../assets/images/jupyterhub_launcher.png)
 
 ## RStudio
@@ -210,8 +210,9 @@ The following limits will be imposed on JupyterHub servers:
 
 {: .important}
 JupyterHub instance will shut down after **3 hours** idle (no notebooks actively running code).
-  {: .warning}
-  Idle servers shut down will not retain any local packages or variables in the notebooks.  Please save your output.
+
+{: .warning}
+Idle servers shut down will not retain any local packages or variables in the notebooks.  Please save your output.
 
 If your processes require more than these limits, reach out to the <a href="https://rcpedia.stanford.edu/services/researchSupportRequest.html" target="_blank">DARC team</a> for support.
 
