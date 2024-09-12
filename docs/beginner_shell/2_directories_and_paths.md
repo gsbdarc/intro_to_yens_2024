@@ -2,6 +2,7 @@
 title: 2. Directories and File System Paths
 layout: page
 nav_order: 2
+parent: Beginner Shell
 updateDate: 2024-08-16
 ---
 

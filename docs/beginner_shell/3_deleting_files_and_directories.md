@@ -2,7 +2,8 @@
 title: 3. Deleting Files and Directories
 layout: page
 nav_order: 3
-updateDate: 2024-08-16
+parent: Beginner Shell
+updateDate: 2024-09-12
 ---
 
 # {{ page.title }}

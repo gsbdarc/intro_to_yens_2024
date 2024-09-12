@@ -1,8 +1,9 @@
 ---
-title: 1. The Shell 
+title: 1. Introduction to The Shell 
 layout: page
 nav_order: 1
-updateDate: 2024-08-16
+parent: Beginner Shell
+updateDate: 2024-09-12
 ---
 
 # {{ page.title }}
@@ -25,7 +26,7 @@ updateDate: 2024-08-16
 - **Mac users:** access the shell through the *Terminal* app
 
 - **Windows users:** have to install third-party software to use the “right” shell
-    - We recommend using an app called [MobaXterm](https://mobaxterm.mobatek.net/) (click the link and follow instructions to install)
+    - We recommend using an app called [GitBash](https://git-scm.com/download/win) (click the link and follow instructions to install either 32-bit or 64-bit version)
 
 - **Linux users:** depending on your specific OS, should be an app called “Shell” or something similar
 
