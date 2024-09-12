@@ -3,6 +3,7 @@ title: 8. Transferring Files to and from Yen Servers
 layout: page
 nav_order: 11 
 updateDate: 2024-08-16
+---
 
 # {{ page.title }}
 In the course of your data processing pipeline, you will often need to transfer data to Yen servers for analysis and subsequently move the resulting files back to your local machine.
