@@ -1,7 +1,7 @@
 ---
-title: 8. Understanding Cluster Components 
+title: 6. Understanding Cluster Components 
 layout: page
-nav_order: 8
+nav_order: 9 
 updateDate: 2024-08-28
 ---
 

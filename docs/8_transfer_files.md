@@ -1,7 +1,7 @@
 ---
-title: 10. Transferring Files to and from Yen Servers
+title: 8. Transferring Files to and from Yen Servers
 layout: page
-nav_order: 10 
+nav_order: 11 
 updateDate: 2024-08-16
 
 # {{ page.title }}

@@ -1,7 +1,7 @@
 ---
-title: 12. Monitoring Usage
+title: 10. Monitoring Usage
 layout: page
-nav_order: 12
+nav_order: 13 
 updateDate: 2024-08-16
 ---
 

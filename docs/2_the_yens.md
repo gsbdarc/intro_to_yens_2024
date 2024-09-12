@@ -1,7 +1,7 @@
 ---
-title: 4. The Yen Servers
+title: 2. The Yen Servers
 layout: page
-nav_order: 4
+nav_order: 5
 updateDate: 2024-08-16
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: 11. Editing Files on the Command Line
+title: 9. Editing Files on the Command Line
 layout: page
-nav_order: 11
+nav_order: 12 
 updateDate: 2024-08-16
 ---
 

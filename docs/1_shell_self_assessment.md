@@ -23,7 +23,15 @@ Once you've identified your experience level, we’ll split into three groups, e
 
 #### 1. **Beginner Table**
 If you’ve never used a shell or feel unsure about navigating through it:
-- Please head over to the [Beginner Shell]() to get started with the shell basics.
+- Please head over to the [Introduction to the Shell](beginner_shell/1_introduction.md) to get started with the shell basics.
 
-#### 2. **Intermediate and Advanced Paths**
+#### 2. **Intermediate and Advanced Groups**
+If you’ve used the shell before, let’s make this fun! Try out the following exercise to determine whether you should follow the **intermediate** or **advanced** materials. Do not use the Internet / ChatGPT for this assessment!
+
+### Step 3: The Fun Exercise!
+Answer the following three questions:
+
+1. What command would you use to list all the files, including hidden ones, in a directory?
+2. How do you find and replace text in a file using the command line?
+3. How can you view the last 10 lines of a file in the shell?
 
