@@ -28,10 +28,20 @@ If you’ve never used a shell or feel unsure about navigating through it:
 #### 2. **Intermediate and Advanced Groups**
 If you’ve used the shell before, let’s make this fun! Try out the following exercise to determine whether you should follow the **intermediate** or **advanced** materials. Do not use the Internet / ChatGPT for this assessment!
 
-### Step 3: The Fun Exercise!
-Answer the following three questions:
+#### The Fun Exercise!
 
-1. What command would you use to list all the files, including hidden ones, in a directory?
-2. How do you find and replace text in a file using the command line?
-3. How can you view the last 10 lines of a file in the shell?
+Let’s make this more interactive! Follow the steps below and answer the questions within the file you create.
 
+1. In your home directory, create a new directory called `quiz_dir`
+2. Navigate into `quiz_dir`
+3. Create a new file called `answers.txt` inside `quiz_dir`
+4. Now, answer the following questions by writing your answers into `answers.txt`
+
+
+#### Questions:
+
+1. Which command lists all files, including hidden ones, in the current directory?
+2. Which command redirects the output of echo "Hello" into a file called `hello.txt`, overwriting its content?
+3. Which command renames the file `hello.txt` to `greeting.txt`?
+4. How do you append the text "End of quiz" to the `answers.txt` file?
+5. Using the command line, how do you view the contents of `answers.txt` and write the result to another file called `output.txt` at the same time?
