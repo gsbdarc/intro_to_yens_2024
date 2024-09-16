@@ -1,5 +1,13 @@
+---
+title: Advanced Shell
+layout: page
+nav_order: 1
+parent: Advanced Shell
+updateDate: 2024-09-16
+---
 
-# Advanced Shell
+# {{ page.title }}
+---
 
 Welcome to the **Advanced Shell** section! You’ve come a long way with shell skills, and now it's time to explore some of the more powerful and versatile tools at your disposal. This section dives into advanced topics that will enhance your ability to automate tasks, manipulate text, and manage complex operations on the command line.
 

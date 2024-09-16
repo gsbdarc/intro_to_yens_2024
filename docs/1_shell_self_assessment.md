@@ -46,10 +46,10 @@ Follow the steps below and answer the questions within the file you create.
 3. Which command renames the file `hello.txt` to `greeting.txt`?
 4. How do you append the text "End of quiz" to the `answers.txt` file?
 5. In one line, what is the command to see how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file?
-6. Finally, write the answer to how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file? 
+6. Finally, write the answer to how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file.
 
 
-After you are done with the quiz, print the content of the `answers.txt` to the screen and put a sticky note on your laptop so that the instructor can check your answers. 
+After you are done with the quiz, print the content of the `answers.txt` to the screen and put a sticky note on your laptop so that the instructors can check your answers. 
 
-- If you get all the answers right, head over to the "Advanced" table for [Advanced Shell](advanced_shell/advanced_shell.md) 
-- If you get some but not all answers right, head over to the "Intermediate" table for [Intermediate Shell](intermediate_shell/intermediate_shell.md) 
+- If you get all the answers right, head over to the "Advanced" table for [Advanced Shell](advanced_shell/advanced_shell.md). 
+- If you get some but not all answers right, head over to the "Intermediate" table for [Intermediate Shell](intermediate_shell/intermediate_shell.md). 
