@@ -44,9 +44,9 @@ Follow the steps below and answer the questions within the file you create.
 1. Which command lists all files, including hidden ones, in the current directory?
 2. Which command redirects the output of echo "Hello" into a file called `hello.txt`, overwriting its content?
 3. Which command renames the file `hello.txt` to `greeting.txt`?
-4. How do you append the text "End of quiz" to the `answers.txt` file?
-5. In one line, what is the command to see how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file?
-6. Finally, write the answer to how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file.
+4. In one line, what is the command to see how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file?
+5. Finally, write the answer to how many "disallow" statements are in the [https://www.gsb.stanford.edu/robots.txt](https://www.gsb.stanford.edu/robots.txt) file.
+6. Append the text "End of quiz" to the `answers.txt` file.
 
 
 After you are done with the quiz, print the content of the `answers.txt` to the screen and put a sticky note on your laptop so that the instructors can check your answers. 
