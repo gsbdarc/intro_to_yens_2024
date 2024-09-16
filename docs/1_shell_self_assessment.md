@@ -51,5 +51,5 @@ Follow the steps below and answer the questions within the file you create.
 
 After you are done with the quiz, print the content of the `answers.txt` to the screen and put a sticky note on your laptop so that the instructors can check your answers. 
 
-- If you get all the answers right, head over to the "Advanced" table for [Advanced Shell](advanced_shell/advanced_shell.md). 
 - If you get some but not all answers right, head over to the "Intermediate" table for [Intermediate Shell](intermediate_shell/intermediate_shell.md). 
+- If you get all the answers right, head over to the "Advanced" table for [Advanced Shell](advanced_shell/advanced_shell.md). 

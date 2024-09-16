@@ -17,7 +17,6 @@ Welcome to the Intermediate Shell section! You’ve used the shell before, and n
 - Working with Input/Output Redirection
 - Using Wildcards for Pattern Matching
 - Introduction to File Search with `find`
-- Basic Process Management
 
 ---
 
@@ -107,25 +106,9 @@ The `find` command helps you search for files based on specific criteria, such a
 
 ---
 
-### 6. Basic Process Management
-
-When working on the command line, especially when running scripts or remote sessions, it’s important to understand how to manage processes.
-
-- **View running processes**: `ps` or `ps aux` lists processes running on the system.
-- **Killing a process**: Use `kill` followed by the process ID (PID) to stop a process.
-    - Example: `kill 1234`
-- **Running a command in the background**: Use `&` to run commands in the background.
-    - Example: `long_running_script.sh &`
-
-> **Exercise**: 
-> 
-> - Run a process in the background and use `ps` to find its PID.
-> - Experiment with stopping a process using `kill`.
-
----
 ### Conclusion
 
-You’ve now strengthened your core shell skills, focusing on efficient navigation, permissions, redirection, wildcards, and process management. These are foundational skills that will help you become more productive when using the Yens cluster.
+You’ve now strengthened your core shell skills, focusing on efficient navigation, permissions, redirection, and wildcards. These are foundational skills that will help you become more productive when using the Yens cluster.
 
 Next steps: If you feel comfortable with these topics, head over to the [Advanced Shell](../advanced_shell/advanced_shell.md) section where we’ll dive into more powerful tools like `grep`, `awk`, and `sed` to take your shell usage to the next level!
 
