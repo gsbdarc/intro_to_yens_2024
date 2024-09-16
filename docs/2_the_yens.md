@@ -16,7 +16,8 @@ As a research fellow, you, by default already have access to these servers.
   <img src="{{ site.baseurl }}/assets/images/yens-2.png" alt="Yens Image 2" style="width: 48%;">
 </div>
 
-**Important**: The `yen` servers are not designed for teaching or course work!
+{: .important }
+The `yen` servers are not designed for teaching or course work!
 
 <div class="row">
     <div class="col-lg-12">

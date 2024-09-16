@@ -29,5 +29,5 @@ In many research scenarios, tasks can exceed the capabilities of your laptop due
 
 ### Parallelization and Multiple CPUs
 - **Side Effect-Free Functions**: Functions that do not change anything outside their local environment can be parallelized, as they have no 'side effects'.
-- **Benefits of Parallelization**: Multiple CPUs can work simultaneously, provided their work has no interacting side effects. However, this often increases memory usage due to data duplication (tradeoff between runtime and memory optimization).
+- **Benefits of Parallelization**: Multiple CPUs can work simultaneously, provided their work has no interacting side effects. However, this often increases memory usage due to data duplication (trade-off between runtime and memory optimization).
 - **Parallelizeing Your Research Code**: While parallelizing processes can save time, it requires time-consuming coding.
