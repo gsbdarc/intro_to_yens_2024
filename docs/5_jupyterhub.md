@@ -1,8 +1,8 @@
 ---
-title: 4. JupyterHub on the Yens 
+title: 5. JupyterHub on the Yens 
 layout: page
-nav_order: 7 
-updateDate: 2024-08-28
+nav_order: 8 
+updateDate: 2024-09-17
 ---
 
 # {{ page.title }}
