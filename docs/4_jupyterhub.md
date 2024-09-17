@@ -60,29 +60,37 @@ Let's focus on the left panel for now. The first tab open in the left panel is t
 
 If we navigate to the `intro_to_yens_2024` directory, we should see the following structure in the file browser:
 
-<div style="display: flex; align-items: left;"> 
-    <div style="flex: 1;"> 
-        <img src="../assets/images/jupyter_left_sidebar.png" alt="JupyterHub Left Sidebar" style="max-width: 100%; width: 800px; height: auto;"/> 
-    </div> 
-    <div style="flex: 2; padding-left: 20px;"> 
-        <p>Currently, we are in the **file browser tab**, indicated by the folder icon.</p> 
-        <p>In this tab, you can manipulate the file system on the Yens through a graphical user interface (GUI), much like the file system on your own computer. Here, you can create new launcher windows using the [Launcher](#){: .btn .btn-blue }, add folders, upload files, and restart kernels.</p> 
-        <p>Below the search bar is the file path. Clicking on the **home icon** (folder icon) will return the file browser to your home directory, allowing you to access any directories that are accessible from your home on the Yens system.</p> 
-    </div> 
-</div>
 
 
-### Running Tab 
-<div style="display: flex; align-items: left;"> 
-    <div style="flex: 1;"> 
-        <img src="../assets/images/jupyter_running_tab.png" alt="JupyterHub Left Sidebar" style="max-width: 100%; width: 800px; height: auto;"/> 
-    </div> 
-    <div style="flex: 2; padding-left: 20px;"> 
-        <p>Currently, we are in the **file browser tab**, indicated by the folder icon.</p> 
-        <p>In this tab, you can manipulate the file system on the Yens through a graphical user interface (GUI), much like the file system on your own computer. Here, you can create new launcher windows using the [Launcher](#){: .btn .btn-blue }, add folders, upload files, and restart kernels.</p> 
-        <p>Below the search bar is the file path. Clicking on the **home icon** (folder icon) will return the file browser to your home directory, allowing you to access any directories that are accessible from your home on the Yens system.</p> 
-    </div> 
-</div>
+### File Browser Tab
+
+![JupyterHub Left Sidebar](../assets/images/jupyter_left_sidebar.png){: style="max-width: 100%; width: 360px; height: auto; float: left; margin-right: 20px;" }
+Currently, we are in the **file browser tab**, indicated by the folder icon.
+
+In this tab, you can manipulate the file system on the Yens through a graphical user interface (GUI), much like the file system on your own computer. Here, you can create new launcher windows using the <span class="fs-2"> [+](javascript:void(0);){: .btn .btn-blue .btn-sm }</span>, add folders, upload files, and restart kernels.
+
+Below the search bar is the file path. Clicking on the **home icon** (folder icon) will return the file browser to your home directory, allowing you to access any directories that are accessible from your home on the Yens system.
+
+<br>
+<br>
+<br>
+<br>
+
+### Running Tab
+
+![JupyterHub Running Tab](../assets/images/jupyter_running_tab.png){: style="max-width: 100%; width: 360px; height: auto; float: left; margin-right: 30px;" }
+
+This is the  **running tab**, indicated by the square icon.
+
+In this tab, you can see all the **notebooks (kernels), terminals,** and other processes that are currently running. Each entry shows the name of the notebook or terminal, allowing you to easily identify and manage them.
+
+- **Shutting Down Processes:** You can shut down notebooks and terminals from here. Shutting down a notebook will not delete it but will stop its kernel from running. This is useful if you want to free up resources or restart the kernel to clear the execution environment.
+
+- **Persistent Kernels:** Closing the browser tab of a notebook does not stop its kernel. The kernel will continue to run any processes or code, which may consume resources or affect system performance.
+
+- **Restarting Kernels:** If you need to reset a notebook's state without shutting it down completely, you can restart its kernel from this tab.
+
+**Note:** Regularly monitor the running tab to manage your active sessions effectively. Shutting down kernels and terminals you no longer need helps maintain optimal performance for you and other users on the system.
 
 
 ## File Upload and Download
