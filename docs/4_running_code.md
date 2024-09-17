@@ -277,7 +277,9 @@ installed, you can load it in your scripts without the need for repeated install
 
 Moreover, if you require access to a newer software version that is not currently available on the system, please don't hesitate to [contact DARC](mailto:gsb_darcresearch@stanford.edu) to request its installation.
 
-### Installing R packages without a Graphical Interface
+### Installing R Packages 
+
+{: .important }
 The recommended way to install your R packages is using the command line (not RStudio on JupyterHub and not the terminal in JupyterHub).
 
 ### Navigate to Examples Folder
