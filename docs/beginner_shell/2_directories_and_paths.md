@@ -92,10 +92,10 @@ machine_name:~/test_dir/test2$ pwd
 ```
 
 {: .note }
-The output of `pwd` is a path that starts with a `/`, so it’s an **absolute path**
+The output of `pwd` is a path that starts with a `/`, so it’s an **absolute path**.
 
-    - The path `/` points to the `top` of the file system, i.e. the directory that contains all others (called the "root").
-    - `/` is not the "home" directory for a user because files related to the operating system live in `/` that users shouldn’t (usually) touch.
+- The path `/` points to the `top` of the file system, i.e. the directory that contains all others (called the "root").
+ - `/` is not the "home" directory for a user because files related to the operating system live in `/` that users shouldn’t (usually) touch.
 
 - Paths that don’t start with `/` are **relative paths**; wherever they’re used (directly in the shell or in code), they start from the current working directory, not `/`.
     - The shell assumes paths that don’t start with `/` are meant to be relative to the current working directory.

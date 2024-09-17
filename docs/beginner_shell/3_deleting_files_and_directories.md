@@ -34,23 +34,27 @@ machine_name:~/test_dir$ cd ..
 machine_name:~$ rm -r test_dir
 ```
 
-- *Note:* if you run `rm test_dir` without the `-r` flag, the shell will complain since `test_dir` is a directory, not a file
+{: .note }
+If you run `rm test_dir` without the `-r` flag, the shell will complain since `test_dir` is a directory, not a file.
 
 ## Shell program flags
 
-- More generally, an **option** (often called a **flag**) is another way to change the behavior of a program besides an argument
+- More generally, an **option** (often called a **flag**) is another way to change the behavior of a program besides an argument.
 
-- A shell program knows which argument is which from the order of them, while options have names (e.g. `-r`) that the program can recognize
+- A shell program knows which argument is which from the order of them, while options have names (e.g. `-r`) that the program can recognize.
 
-- As more examples of helpful flags, let's return to the `ls` command that lists the contents of a directory
-    - If you specify the `-l` flag when running `ls`, the shell will list the contents of the directory with much more detailed information, such as the size of the file and the last time it was modified
+- As another example of helpful flags, let's return to the `ls` command that lists the contents of a directory
+    - If you specify the `-l` flag when running `ls`, the shell will list the contents of the directory with much more detailed information, such as the size of the file and the last time it was modified.
     - If you also specify the `-h` flag, then the file sizes will be provided in "human-readable" form, i.e. in KB, MB, GB, or TB instead of in raw bytes (if you can do the conversions quickly in your head, good on you!)
     - Note that you can specify multiple flags after a `-`, e.g.
-
     ```bash
     machine_name:~$ ls -lh
     ```
 
+{: .tip }
+My favorite flag combination is `ls -ltrh` to list files in long format in reverse chronological order and human readable format. I used this combination so frequently, I aliased this command to be just `l` in my `~/.bash_profile`.
+
+
 ## More resources
 
-We'll only have time to scratch the surface of interacting with computers via the shell today and tomorrow; See lessons [1](https://missing.csail.mit.edu/2020/course-shell/) and [3](https://missing.csail.mit.edu/2020/shell-tools/) of [the Missing Semester](https://missing.csail.mit.edu) open-source MIT course on miscellaneous software engineering skills for more in-depth information and tips about making the most of the shell.
+We'll only have time to scratch the surface of interacting with computers via the shell today. See lessons [1](https://missing.csail.mit.edu/2020/course-shell/) and [3](https://missing.csail.mit.edu/2020/shell-tools/) of [the Missing Semester](https://missing.csail.mit.edu) open-source MIT course on miscellaneous software engineering skills for more in-depth information and tips about making the most of the shell.
