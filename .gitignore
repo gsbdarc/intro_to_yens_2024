@@ -2,6 +2,9 @@
 *.out 
 *.pdf
 
+# Swap md files
+*.swp
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
