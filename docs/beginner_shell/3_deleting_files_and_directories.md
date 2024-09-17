@@ -52,7 +52,7 @@ If you run `rm test_dir` without the `-r` flag, the shell will complain since `t
     ```
 
 {: .tip }
-My favorite flag combination is `ls -ltrh` to list files in long format in reverse chronological order and human readable format. I used this combination so frequently, I aliased this command to be just `l` in my `~/.bash_profile`.
+My favorite flag combination is `ls -ltrh` to list files in a long format in reverse chronological order and human readable format. I used this combination so frequently, I aliased this command to be just `l` in my `~/.bash_profile`.
 
 
 ## More resources
