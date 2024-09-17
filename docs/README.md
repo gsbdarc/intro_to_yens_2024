@@ -24,7 +24,7 @@ These sessions should be helpful to *you*, so let us know if they aren’t!
 
 ## Who are we?
 ## The DARC Team:
-![](/assets/images/.darc-sep-2024.jpg)
+![](/assets/images/darc-sep-2024.jpg)
 
 ### Contact Us
 - Join <a href="https://circlerss.slack.com/archives/C01JXJ6U4E5" target="_blank">#gsb-yen-users Slack channel</a> where you can ask and answer GSB Yen related questions and share your Yen usage wisdom with the community - Yen users and the DARC team. We will also use this channel to announce Yen related workshops and poll users about the Yens to improve our services. In case the link does not work, open Slack application, search for <b>#gsb-yen-users</b> channel in Channels and join it.
