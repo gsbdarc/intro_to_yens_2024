@@ -7,10 +7,11 @@ updateDate: 2024-09-17
 
 # {{ page.title }}
 
-## Clone a remote Git repository
-Often, you'll want to download an existing Git repository to a machine you have access to so you can run and/or modify the code in it yourself; doing so is quite common when collaborating with others or working with open-source software. The Git vocabulary term for doing so is **cloning** a repository.
+## Cloning a Git Repository
+When you want to work with code that someone else has already written, like an example from class or an open-source project, you'll often need to download it to your own environment. In Git, the process of copying an entire project from a remote location (like GitHub) to your local machine (or the Yens) is called **cloning**.
 
-Today, we'll be working with examples we uploaded to a remote Git repository hosted by GitHub that also contains the source code for this website. To clone the repository to your ZFS home directory on the Yens, run the following command:
+Today, we’ll be working with code examples stored in a Git repository on GitHub, which also contains the source for this class website. To get started, you’ll need to clone this repository to your home directory on the Yens. Run the following command to do that:
+
 ```bash
 SUNetID@yenX:~$ git clone https://github.com/gsbdarc/intro_to_yens_2024.git
 ```
