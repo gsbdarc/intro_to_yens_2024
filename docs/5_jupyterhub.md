@@ -38,7 +38,7 @@ JupyterHub is a great tool for interactive computing, data analysis, and visuali
 The typical development workflow is to use JupyterHub and more specifically the Jupyter Notebooks and RStudio, for prototyping and testing code, and then running the final version on the Yen servers or Slurm Cluster.
 
 
-![](../assets/images/jupyter_in_yens.png)
+![](../assets/images/Shell_jupyterhub.png)
 
 
 ## Features of JupyterHub
@@ -104,7 +104,7 @@ To upload a file from your local machine to JupyterHub:
 
 1. Navigate to the correct directory in JupyterHub where you want the file to be uploaded.
 
-2. Click the up arrow button located at the top left of your screen:
+2. Click the up arrow button located at the top left of your screen.
 
 3. A file explorer window will open, allowing you to select the file from your local machine.
 
@@ -134,8 +134,8 @@ Let's open up a Terminal and navigate to the `intro_to_yens_2024`
 
 
 ```bash
-$ cd intro_to_yens_2024/examples/
-$ ls
+cd intro_to_yens_2024/examples/
+ls
 ```
 This should show all the different examples available in the `intro_to_yens_2024` directory.
 
@@ -189,6 +189,17 @@ If you opened up a notebook and want to get back to the Launcher interface to la
 
 RStudio GUI is also available! Clicking this link will bring up a new tab with a web-based RStudio on the Yens.
 
+{: .warning}
+RStudio cannot change the R version. If you need a different version of R, please use the terminal to load the correct version.
+
+
+## MATLAB
+-----------
+![](../assets/images/jupyter_matlab.png)
+
+Matlab GUI is also available! Clicking this link will bring up a new tab with a web-based Matlab on the Yens
+
+
 ## Installing Packages
 -----------------------
 JupyterHub loads packages found in your `~/.local/` directory. 
@@ -234,3 +245,8 @@ For example, navigate to `intro_to_yens_2024/examples/` folder in file brower fi
 ![](../assets/images/edit-r-script.png)
 
 ---
+
+## Julia Kernel
+{: .note}
+If you are are a Julia user, you can also use the Julia kernel in JupyterHub. To do this, you will need to install the Julia kernel on the Yens.
+To do this please follow the instructions in [Julia Kernel Installation](https://rcpedia.stanford.edu/faqs/installJuliaOnJupyter.html)
