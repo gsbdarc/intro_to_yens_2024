@@ -125,11 +125,16 @@ specified 8 cores in our R program and about 8 CPU cores being utilized in `user
 
 ![](../assets/images/monitor-2.png)
 
-Last modification we are going to make is to pass the number of cores as a command line argument to our R script.
+### Passing the Number of Cores as a Command-Line Argument
+The last modification we’ll make is to allow our R script to take the number of cores as a command-line argument. This is useful because it gives you the flexibility to specify the number of CPU cores you want to use for parallel processing each time you run the script, without needing to edit the script itself. This can be especially helpful when running the same script on different machines or with different computational resources.
+
 See the modified [script](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples/investment-npv-parallel-args.R) called `investment-npv-parallel-args.R`. 
+
+To run the script, you can use the following command:
 
 ```bash
 Rscript investment-npv-parallel-args.R 8
 ```
-
+In this example, `8` is the number of cores you are requesting. The script will use this value to determine how many cores should be allocated for parallel processing. You can adjust the number of cores based on the resources available and remember to adhere to community guidelines.
+ 
 Monitor your CPU usage while the program is running in the other terminal window with `htop` and `userload`.
