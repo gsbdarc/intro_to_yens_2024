@@ -13,10 +13,10 @@ When you want to work with code that someone else has already written, like an e
 Today, we’ll be working with code examples stored in a Git repository on GitHub, which also contains the source for this class website. To get started, you’ll need to clone this repository to your home directory on the Yens. Run the following command to do that:
 
 ```bash
-SUNetID@yenX:~$ git clone https://github.com/gsbdarc/intro_to_yens_2024.git
+git clone https://github.com/gsbdarc/intro_to_yens_2024.git
 ```
 
-Once you've run that command, change your working directory to the `~/intro_to_yens_2024/examples/` folder.
+Once you've run that command, change your working directory to the `~/intro_to_yens_2024/examples` folder.
 
 ## Yen Software (Modules)
 There's a number of software packages available for use on the Yen servers.  Here is the current list:
@@ -57,9 +57,14 @@ There's a number of software packages available for use on the Yen servers.  Her
 
 We use Linux module system to load the software into your current environment. Linux modules are used on research servers.
 The advantage of the module system is that as a system user you do not need to install the software yourself nor do you need to mess with setting up the paths correctly.
-You simply load it and unload it in your current session and the correct paths get added to your environment variables. For software like
-Python, R and Julia, etc the user still needs to install their own libraries or packages. We will go over the details of how
-to install packages later in this course. Another advantage of the module system is that several versions of the same sofware
+You simply load it and unload it in your current session and the correct paths get added to your environment variables. 
+
+{: .note }
+For software like Python, R and Julia, etc the user still needs to install their own libraries or packages. 
+
+We will go over the details of how to install packages later today. 
+
+Another advantage of the module system is that several versions of the same sofware
 can coexist and if your research uses a specific version of software you can stick with it even though the newer versions of that software exist.
 
 ### See available software
@@ -68,7 +73,7 @@ Check the current list of available software and versions on the Yen servers wit
 
 
 ```bash
-$ module avail
+module avail
 ```
 
 You should see the following:
@@ -128,7 +133,7 @@ Use "module keyword key1 key2 ..." to search for all possible modules matching a
 If you are looking for all available R modules, you can filter `module avail` command as follows:
 
 ```bash
-$ module avail R/
+module avail R/
 ```
 
 You should see the list of all avaible R versions that are already installed on the Yen server:
@@ -150,7 +155,7 @@ If there are multiple versions of the same software, the default version is indi
 For example, the default R version is currently `R/4.3.0`. If you are happy with the default version, you can simple type:
 
 ```bash
-$ module load R
+module load R
 ```
 
 and the default version will be loaded. You can also use the shorthand `ml` instead of typing `module load` and `module list`.
@@ -158,19 +163,18 @@ If you want to downgrade to an older R version, you
 can specify the version number:
 
 ```bash
-$ ml purge
-$ ml R/4.1.3
+ml R/4.1.3
 ```
 
 To see currently loaded modules, use:
 
 ```bash
-$ module list
+module list
 ```
 
 Or with a shorthand:
 ```bash
-$ ml
+ml
 ```
 
 You should see:
@@ -184,12 +188,12 @@ Currently Loaded Modules:
 If you want to switch R versions, you can use:
 
 ```bash
-$ ml swap R/4.2.1
+ml swap R/4.2.1
 ```
 
 Then, run:
 ```bash
-$ ml
+ml
 ```
 
 You should see:
@@ -202,26 +206,26 @@ Currently Loaded Modules:
 You can unload an individual module with:
 
 ```bash
-$ module unload R 
+module unload R 
 ```
 
 Or with a shorthand `-`:
 ```bash
-$ ml R
-$ ml
-$ ml -R
-$ ml
+ml R
+ml
+ml -R
+ml
 ```
 Or you can unload all modules that you have currently loaded with:
 
 ```bash
-$ ml purge
+ml purge
 ```
 
 Now, if you run
 
 ```bash
-$ ml
+ml
 ```
 
 You will see:
@@ -230,13 +234,16 @@ You will see:
 No modules loaded
 ```
 
-Linux modules only modify your current working environment which means that if you lose connection to the Yens or close your terminal window, you will need to reload the modules. But all of the libraries or packages that you have installed as a user will persist and only need to be installed once.
+{: .warning}
+Linux modules only modify your current working environment which means that if you lose connection to the Yens or close your terminal window, you will need to reload the modules. 
+
+But all of the libraries or packages that you have installed as a user will persist and only need to be installed once.
 
 Once the software you want to use is loaded, the binary is available for you to use from the command line.
 For example, if you want to install R packages or run interactive R console, type:
 
 ```bash
-$ R
+R
 ```
 
 The interactive R console will open with the R version matching the module you have loaded:
@@ -273,10 +280,14 @@ Save workspace image? [y/n/c]: n
 Every R version will also have its own library separate from other versions. For example, R 4.0 will have its user-installed
 packages side by side with R 4.3 library containing the user-installed packages specific to that version.
 
-When upgrading your R version (e.g., to run code with a newly released R version), you must first install packages that are needed for your script to run for that specific R version. However, once the package is
+{: .important}
+When upgrading your R version (e.g., to run code with a newly released R version), you must first install packages that are needed for your script to run for that specific R version. 
+
+However, once the package is
 installed, you can load it in your scripts without the need for repeated installations upon each login.
 
-Moreover, if you require access to a newer software version that is not currently available on the system, please don't hesitate to [contact DARC](mailto:gsb_darcresearch@stanford.edu) to request its installation.
+{: .tip }
+If you require access to a newer software version that is not currently available on the system, please don't hesitate to [contact DARC](mailto:gsb_darcresearch@stanford.edu) to request its installation.
 
 ### Installing R Packages 
 
@@ -285,8 +296,8 @@ The recommended way to install your R packages is using the command line (not RS
 
 ### Navigate to Examples Folder
 ```bash
-$ cd intro_to_yens_2024/examples 
-$ ls -ltr
+cd intro_to_yens_2024/examples 
+ls -ltr
 ```
 
 Load the R module with the version that you want (R 4.3 is the current default).
@@ -294,7 +305,7 @@ Load the R module with the version that you want (R 4.3 is the current default).
 For example, let's use the newest R version available on the yens:
 
 ```bash
-$ ml R
+ml R
 ```
 
 Start interactive R console by typing `R`.
@@ -304,6 +315,8 @@ Let's install two multiprocessing packages on the Yens that we will use for the 
 ```R
 > install.packages('foreach')
 ```
+
+{: .important }
 If this is your first time installing R package for this R version on the Yens, you will be asked to create a personal library
 (because users do not have write permissions to the system R library). Answer `yes` to both questions:
 
@@ -393,7 +406,7 @@ If you want to simply run the script, you can do so from the command line.
 Because this R code uses multiprocessing and the yens are a shared computing environment, we need to be careful about how R sees and utilizes the shared cores on the yens.
 
 
-We never use `detectCores()` function on the shared systems, so instead, we will hard code the number of cores for
+We **never** use `detectCores()` function on the shared systems, so instead, we will hard code the number of cores for
 the script to use in this line in the R script:
 
 ```R
@@ -403,7 +416,7 @@ ncore <- 1
 After loading the R module, we can run this script with `Rscript` command on the command line:
 
 ```bash
-$ Rscript investment-npv-serial.R
+Rscript investment-npv-serial.R
 ```
 
 ```bash
