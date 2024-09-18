@@ -128,5 +128,10 @@ screen -ls
 No Sockets found in /run/screen/S-nrapstin.
 ```
 
-{: .important }
+{: warning }
 Screen sessions should only be started from a regular terminal, not JupyterHub terminal. Screens will not persist in Jupyter.
+
+
+{: .tip }
+Stay tuned for the afternoon session, where we’ll dive into Slurm and how to run scheduled jobs. This is a powerful alternative to using `screen` or running jobs in the background, providing more flexibility and control over long-running tasks.
+
