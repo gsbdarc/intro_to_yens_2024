@@ -15,11 +15,11 @@ It also gives you a terminal, file browser and a way to run Jupyter notebooks wi
 
 To get started, open a web browser and visit one of the following links for each server:
 
-- <a href="https://yen1.stanford.edu/jupyter/" target="_blank">Yen1 https://yen1.stanford.edu/jupyter</a>
-- <a href="https://yen2.stanford.edu/jupyter/" target="_blank">Yen2 https://yen2.stanford.edu/jupyter</a>
-- <a href="https://yen3.stanford.edu/jupyter/" target="_blank">Yen3 https://yen3.stanford.edu/jupyter</a>
-- <a href="https://yen4.stanford.edu/jupyter/" target="_blank">Yen4 https://yen4.stanford.edu/jupyter</a>
-- <a href="https://yen5.stanford.edu/jupyter/" target="_blank">Yen5 https://yen5.stanford.edu/jupyter</a>
+- <a href="https://yen1.stanford.edu" target="_blank">Yen1 https://yen1.stanford.edu</a>
+- <a href="https://yen2.stanford.edu" target="_blank">Yen2 https://yen2.stanford.edu</a>
+- <a href="https://yen3.stanford.edu" target="_blank">Yen3 https://yen3.stanford.edu</a>
+- <a href="https://yen4.stanford.edu" target="_blank">Yen4 https://yen4.stanford.edu</a>
+- <a href="https://yen5.stanford.edu" target="_blank">Yen5 https://yen5.stanford.edu</a>
 
 You will need to login with your SUNet credentials, and then click on `Start My Server`.  From there, you will have access to the web-based computing services available.
 
