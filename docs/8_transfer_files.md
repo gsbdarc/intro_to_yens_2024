@@ -80,3 +80,7 @@ In this example, we're copying the `results` folder from the Yen's ZFS file syst
 
 ### Using Other Transfer Tools
 See <a href="https://rcpedia.stanford.edu/faqs/rclone.html" target="_blank">rclone</a> and <a href="https://rcpedia.stanford.edu/faqs/rsync.html" target="_blank">rsync</a> pages to learn two additional transfer tools.
+
+## Big Data Transfers
+{: .tip }
+For big data transfers to/from the Yens, we recommend the tools called <a href="https://rcpedia.stanford.edu/services/globus.html" target="_blank">Globus</a>. 

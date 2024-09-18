@@ -2,7 +2,7 @@
 title: 9. Editing Files on the Command Line
 layout: page
 nav_order: 12 
-updateDate: 2024-08-16
+updateDate: 2024-09-18
 ---
 
 # {{ page.title }}
@@ -16,7 +16,7 @@ updateDate: 2024-08-16
 - To create a new file and open it with Vim, use the command `vim` with a path to a file that doesn't yet exist passed as an argument:
 
 ```bash
-SUNetID@yen4:~$ vim input.txt
+vim input.txt
 ```
 
 - You can open an existing file by using `vim` with a path to a file that already exists passed as an argument

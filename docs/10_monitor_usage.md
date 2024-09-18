@@ -37,7 +37,7 @@ Note that in certain cases greedy jobs may be terminated automatically to preser
 The `userload` command will list the total amount of resources (CPU & RAM) all your tasks are consuming on that particular Yen node.
 
 ```bash
-$ userload
+userload
 ```
 If the output is empty, you are not utilizing any CPU or RAM on this Yen node.
 
@@ -54,45 +54,45 @@ To monitor the resource usage while running a program, we will need three termin
 Check what yen you are connected to in the first terminal:
 
 ```bash
-$ hostname
+hostname
 ```
 
-Then `ssh` to the same yen in the second and third terminal windows. So if I am on `yen3`, I would open two new terminals and `ssh` to 
+Then `ssh` to the same yen in the second and third terminal windows. So if I am on `yen3`, I would open **two** new terminals and `ssh` to 
 the `yen3` in both so I can monitor my resources when I start running the R program on `yen3`.
 
 ```bash
-$ ssh yen3.stanford.edu
-$ cd intro_to_yens_2024/examples
+ssh yen3.stanford.edu
+cd intro_to_yens_2024/examples
 ```
 
-Once you have three terminal windows connected to the same yen, run the `investment-npv-serial.R` program after loading the R module
+Once you have **three** terminal windows connected to the same yen, run the `investment-npv-serial.R` program after loading the R module
 in one of the terminals:
 
 ```bash
-$ ml R
-$ Rscript investment-npv-serial.R 
+ml R
+Rscript investment-npv-serial.R 
 ```
 
 Once the program is running, monitor your usage with `userload` command in the second window:
 
 ```bash
-$ userload
+userload
 ```
 
-{: .note }
+{: .tip }
 You can refresh a particular command with `watch`. So, you can run `watch userload` and the output will refresh every 2 seconds (by default). 
 
 Run `htop -u $USER` in the third window, where `$USER` is your SUNet ID:
 
 ```
-$ htop -u $USER
+htop -u $USER
 ```
 
 While the program is running you should see about 1 CPU core is being utilized in `userload` output and one R process is running in `htop` output because we
 specified 1 core in our R program.
 
 ```bash
-$ userload
+userload
 nrapstin         | 0.99 Cores | 0.00% Mem on yen3.stanford.edu
 ```
 
@@ -101,7 +101,7 @@ Let's run the same program with more cores. See code [here](https://github.com/g
 Then rerun:
 
 ```bash
-$ Rscript investment-npv-parallel.R
+Rscript investment-npv-parallel.R
 ```
 
 You should see:
@@ -129,7 +129,7 @@ Last modification we are going to make is to pass the number of cores as a comma
 See the modified [script](https://github.com/gsbdarc/intro_to_yens_2024/blob/main/examples/investment-npv-parallel-args.R) called `investment-npv-parallel-args.R`. 
 
 ```bash
-$ Rscript investment-npv-parallel-args.R 8
+Rscript investment-npv-parallel-args.R 8
 ```
 
 Monitor your CPU usage while the program is running in the other terminal window with `htop` and `userload`.
