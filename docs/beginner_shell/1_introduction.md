@@ -26,7 +26,13 @@ updateDate: 2024-09-17
 - **Mac users:** access the shell through the *Terminal* app.
 
 - **Windows users:** have to install third-party software to use the “right” shell
-    - We recommend using an app called [GitBash](https://git-scm.com/download/win) (click the link and follow instructions to install either 32-bit or 64-bit version).
+    - open windows powershell
+    - **Windows 10+ users:** To run a Linux shell run `wsl --install ` 
+    - After WSL installs restart computer
+    - Open search and look for Ubuntu 
+    - Follow the instructions to set up your username and password
+    - You can now use the Ubuntu shell, to enable copy and paste click the icon in the top left and go to settings and enable copy and paste.
+    - **Windows <10 users:** can use Git Bash, a shell that comes with Git for Windows.
 
 - **Linux users:** depending on your specific OS, should be an app called “Shell” or something similar.
 
